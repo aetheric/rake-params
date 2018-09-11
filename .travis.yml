@@ -1,0 +1,14 @@
+language: ruby
+rvm:      2.5
+cache:    bundler
+
+script: bundle exec rake rspec
+
+deploy:
+  provider: rubygems
+  gem:      rake-params
+  on:
+    tags: true
+    repo: aetheric/rake-params
+  api_key:
+    secure: ncC3M6rf55Qy0EXQC7keRtsgHJlEgYV2+K60LcrER0gvdTI6gBLq8ReMlgVb5Tr6uIkRYjSC1ptV3SsjSU9ZrHWfZOS6l67SRJ8zDmhO8QscdruGfQj6MsGTPNARekCGhw1zYvOsRyN6MzCv7Jw5/J0RoLsUAdUx0l+hlvvrT3veaQnJ8yW6AzNaRUrjnb7KaPYL/Bx4bg9XQbRx24U5Vfc4bxHfAIOzrLOs61UG3hVj3cV3CGvJHbW0Y4ltq+MF2ZfEVzSEkIhRpVdek/CqhEAmKrtgstZbqByOYJa2vfAbdhP3D5t3/jFTM3OoeuDSyKrdU3UT9pazcvw/8efUdAs837Ea0Xm2DAVFpulewcgkeWJQYb4v6mrGs6uRnHHsM2F10uDPbIKPxYj5QsosdJfqiuqUcbKgOllPRmApRcKSVCw4y4UOYmj83unDUa3PYxRRJA/nZRqJAIo0TgA8f3GyfIFNz0ImOmfcN6te0agBZ55TOD7yxVGOqsdL5JH/1kiMLHyF5gCfj5BbNoV4twf+/2/4+/G/373sgHgPAXpt3A7a1lS6c7wCd0Q8Qk+7vMbeSLXRqMLQWnkc0w1dqtd/fmsKQlNbt7fcnJTKC/6o9LcukpFAsQf4ZzvM5mGR0xKbwawlIEQ42grtRR7HPFEA4UFK+p5SdJFwcjahj50=

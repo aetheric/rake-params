@@ -1,0 +1,14 @@
+
+# Ruby
+/.bundle/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+*.gem
+.rspec_status
+
+# IntelliJ
+/.idea/
+*.iml
